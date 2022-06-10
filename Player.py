@@ -4,18 +4,18 @@ import string
 class Player:
     
     def __init__(self):
-        self.__id_player: int = 0
+        self.__id: int = 0
         self.__nick_name: string = ""
         self.__score: int = 0
-        self.__id_category: int = 0
+        self.__id_category: int = 1
 
     @property
-    def id_player(self):
-        return self.__id_player
+    def id(self):
+        return self.__id
 
-    @id_player.setter
-    def id_player(self, value):
-        self.__id_player = value
+    @id.setter
+    def id(self, value):
+        self.__id = value
 
     @property
     def nick_name(self):
