@@ -53,16 +53,25 @@ class Game:
         return question
        
     def save_game(self, player):
-        games = et.Element("games")
-        games = et.SubElement(games,"game")
-        nick_name = et.SubElement(games,"nick_name")
-        nick_name.text = player.nick_name
-        score = et.SubElement(games,"score")
-        score.text = str(player.score)
-        tree =et.ElementTree(games)
-        tree.write("games.xml", encoding='utf-8', xml_declaration=True)
+        #try{tree = et.parse('result_games.xml')}
+        #if tree == None:
+            games = et.Element("games")
+            game = et.SubElement(games,"game")
+            nick_name = et.SubElement(game,"nick_name")
+            nick_name.text = player.nick_name
+            score = et.SubElement(game,"score")
+            score.text = str(player.score)
+            tree = et.ElementTree(game)
+            tree.write("result_games.xml", encoding='utf-8', xml_declaration=True)
+        #else:
+            #new_elemet = et.SubElement(tree.getroot(),"game")
+            #nick_name = et.SubElement(new_elemet,"nick_name")
+            #nick_name.text = player.nick_name
+            #score = et.SubElement(new_elemet,"score")
+            #score.text = str(player.score)
+            #tree.find(new_elemet)
 
-    
+
     def play_game(self):
 
         print('Inicciando el Juego de Preguntas')
