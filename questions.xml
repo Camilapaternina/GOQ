@@ -8,16 +8,236 @@
         <option_2>JavaScript</option_2>
         <option_3>Python</option_3>
         <option_4>Celerion</option_4>
-        <answer>Java</answer>
+        <answer>1</answer>
     </question>
-     <question>
+    <question>
         <id>2</id>
-        <category>2</category>
-        <description>Cual de los siguientes lenguajes de progrmación es Compilado</description>
+        <category>1</category>
+        <description>¿Una clase es?</description>
+        <option_1>Varios objetos heredados</option_1>
+        <option_2>Una categoria del mismo</option_2>
+        <option_3>Ninguna es correcta</option_3>
+        <option_4>.Un tipo determinado para crear objetos de ese mismo tipo</option_4>
+        <answer>4</answer>
+    </question>
+    <question>
+        <id>3</id>
+        <category>1</category>
+        <description> Un ciclo de control es</description>
+        <option_1>Condicionales y preguntas</option_1>
+        <option_2>Interacciones para la gestion el flujo de trabajo</option_2>
+        <option_3>Todo lo relacionado con flujo de intercambios logicos</option_3>
+        <option_4>Control para toma de desiciones de computo (if,else,switch,etc)</option_4>
+        <answer>4</answer>
+    </question>
+    <question>
+        <id>4</id>
+        <category>1</category>
+        <description>Qué son los IDE de Java</description>
         <option_1>Java</option_1>
         <option_2>JavaScript</option_2>
-        <option_3>Python</option_3>
+        <option_3>Eclipse y NetBeans</option_3>
         <option_4>Celerion</option_4>
-        <answer>Python</answer>
+        <answer>3</answer>
+    </question>
+    <question>
+        <id>5</id>
+        <category>1</category>
+        <description>Tipo de dato de tipo entero</description>
+        <option_1>String</option_1>
+        <option_2>boolean</option_2>
+        <option_3>int</option_3>
+        <option_4>integer</option_4>
+        <answer>3</answer>
+    </question>
+    <question>
+        <id>6</id>
+        <category>2</category>
+        <description>Nodejs es un framework o tecnologia para </description>
+        <option_1>Python</option_1>
+        <option_2>JavaScript</option_2>
+        <option_3>Java</option_3>
+        <option_4>SQL</option_4>
+        <answer>2t</answer>
+    </question>
+    <question>
+        <id>7</id>
+        <category>2</category>
+        <description>Todas las tablas de una base d edatos relacional deberia tener</description>
+        <option_1>Llaves de particion</option_1>
+        <option_2>Llaves primarias</option_2>
+        <option_3>Llaves compuestas</option_3>
+        <option_4>Llaves foraneas</option_4>
+        <answer>2</answer>
+    </question>
+    <question>
+        <id>8</id>
+        <category>2</category>
+        <description>¿Podemos hacer polimorfismo usando clases abstractas e interfaces?</description>
+        <option_1>No</option_1>
+        <option_2>Si</option_2>
+        <option_3>Una sola vez</option_3>
+        <option_4>Dos veces</option_4>
+        <answer>2</answer>
+    </question>
+    <question>
+        <id>9</id>
+        <category>2</category>
+        <description>¿Que posibles tipos de base de datos existen?</description>
+        <option_1>Relacionales</option_1>
+        <option_2>Referenciales</option_2>
+        <option_3>No-relacionles</option_3>
+        <option_4>Unicos</option_4>
+        <answer>1</answer>
+    </question>
+    <question>
+        <id>10</id>
+        <category>2</category>
+        <description>Una abstractacion es</description>
+        <option_1>Una herencia de una clase maestra</option_1>
+        <option_2>Herencia de multiples comportamientos</option_2>
+        <option_3>Es una implementacion de una interfaz</option_3>
+        <option_4>Es una herencia de una clase adstracta</option_4>
+        <answer>3</answer>
+    </question>
+    <question>
+        <id>11</id>
+        <category>3</category>
+        <description>¿Que ciclo de control usamos para iterar hasta 1000?</description>
+        <option_1>foreach(1:1000){}</option_1>
+        <option_2>for(i=0,i=999)</option_2>
+        <option_3>for(i=0,i=1000)</option_3>
+        <option_4>Ninguna de las anteriores</option_4>
+        <answer>1</answer>
+    </question>
+    <question>
+        <id>12</id>
+        <category>3</category>
+        <description>Un metodo recursivo es como</description>
+        <option_1>function()= funciontion{}</option_1>
+        <option_2>()=()={}</option_2>
+        <option_3>a(b())</option_3>
+        <option_4>a(A())</option_4>
+        <answer>4</answer>
+    </question>
+    <question>
+        <id>14</id>
+        <category>3</category>
+        <description>¿Que combinaciones de join podemos hacer? para una base de datos relacional</description>
+        <option_1>join,add joins</option_1>
+        <option_2>join reverse, inner</option_2>
+        <option_3>inner,full y right</option_3>
+        <option_4>ningua de las anteriores</option_4>
+        <answer>3</answer>
+    </question>
+    <question>
+        <id>15</id>
+        <category>3</category>
+        <description> Un paradigma de programacion orientado a un modelo adstracto de la realidad</description>
+        <option_1>Orientado a objetos</option_1>
+        <option_2>Estructural</option_2>
+        <option_3>Funcional</option_3>
+        <option_4>Ninguna de las anteriores</option_4>
+        <answer>1</answer>
+    </question>
+    <question>
+        <id>16</id>
+        <category>4</category>
+        <description>¿Qué código de los siguientes tiene que ver con la herencia?</description>
+        <option_1>public class Componente extends Producto</option_1>
+        <option_2>public class Componente inherit Producto</option_2>
+        <option_3>public class Componente implements Producto</option_3>
+        <option_4>public class Componente belong to Producto</option_4>
+        <answer>1</answer>
+    </question>   
+    <question>
+        <id>17</id>
+        <category>4</category>
+        <description>En Java, ¿a qué nos estamos refiriendo si hablamos de 'Swing'?</description>
+        <option_1>Una función utilizada para intercambiar valores</option_1>
+        <option_2>Es el sobrenombre de la versión 1.3 del JDK</option_2>
+        <option_3>Un framework específico para Android</option_3>
+        <option_4>Una librería para construir interfaces gráficas</option_4>
+        <answer>4</answer>
+    </question>
+    <question>
+        <id>18</id>
+        <category>4</category>
+        <description>¿Qué es el bytecode en Java?</description>
+        <option_1>El formato de intercambio de datos</option_1>
+        <option_2>El formato que obtenemos tras compilar un fuente .java</option_2>
+        <option_3>Un tipo de variable</option_3>
+        <option_4>Un depurador de código</option_4>
+        <answer>2</answer>
+    </question>
+    <question>
+        <id>19</id>
+        <category>4</category>
+        <description> Cual es el resultado del siguiente programa? int i=1;int j=2; System.out.println ((i > 1)&&(j > 4));</description>
+        <option_1>true</option_1>
+        <option_2>false</option_2>
+        <option_3>undefined</option_3>
+        <option_4>No compila el código</option_4>
+        <answer>2</answer>
+    </question>
+    <question>
+        <id>20</id>
+        <category>4</category>
+        <description>¿Cuál es el valor que se muestra por pantalla? int x = 5; int y = 5; y /= ++x; System.out.println(y);</description>
+        <option_1>6</option_1>
+        <option_2>5</option_2>
+        <option_3>1</option_3>
+        <option_4>0</option_4>
+        <answer>4</answer>
+    </question>
+    <question>
+        <id>21</id>
+        <category>5</category>
+        <description>¿Cual es el resultado del siguiente programa? int k=3; int m=2; System.out.println ( !( k > m) );</description>
+        <option_1>3</option_1>
+        <option_2>true</option_2>
+        <option_3>2</option_3>
+        <option_4>false</option_4>
+        <answer>4</answer>
+    </question>
+    <question>
+        <id>22</id>
+        <category>5</category>
+        <description>int x = 5; int y = 5;y *= x++; System.out.println(y);</description>
+        <option_1>25</option_1>
+        <option_2>30</option_2>
+        <option_3>6</option_3>
+        <option_4>35</option_4>
+        <answer>1</answer>
+    </question>
+    <question>
+        <id>23</id>
+        <category>5</category>
+        <description> El resultado de "C", de la siguiente operación: C = 10 % 3;.</description>
+        <option_1>0</option_1>
+        <option_2>15</option_2>
+        <option_3>2</option_3>
+        <option_4>1</option_4>
+        <answer>4</answer>
+    </question>
+    <question>
+        <id>24</id>
+        <category>5</category>
+        <description>¿Cuál no es un modificador de acceso?</description>
+        <option_1>public</option_1>
+        <option_2>int</option_2>
+        <option_3>no existen</option_3>
+        <option_4>private</option_4>
+        <answer>2</answer>
+    </question>
+    <question>
+        <id>25</id>
+        <category>5</category>
+        <description>¿Qué es un Bytecode? Formato que obtenemos tras compilar un código java</description>
+        <option_1>true</option_1>
+        <option_2>falset</option_2>
+        <option_3>no es una herencia establecida</option_3>
+        <option_4>no es un atributo</option_4>
+        <answer>1</answer>
     </question>
 </questions>

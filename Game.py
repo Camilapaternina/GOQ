@@ -1,10 +1,10 @@
-from operator import le
 from random import choice
-import re
 from xml.etree.ElementTree import parse
+import xml.etree.ElementTree as et
 from Category import Category
 from Question import Question
 from Player import Player
+
 
 class Game:
     def __init__(self, player):
@@ -52,6 +52,16 @@ class Game:
         self.selected_questions.remove(question)
         return question
        
+    def save_game(self, player):
+        games = et.Element("games")
+        games = et.SubElement(games,"game")
+        nick_name = et.SubElement(games,"nick_name")
+        nick_name.text = player.nick_name
+        score = et.SubElement(games,"score")
+        score.text = str(player.score)
+        tree =et.ElementTree(games)
+        tree.write("games.xml", encoding='utf-8', xml_declaration=True)
+
     
     def play_game(self):
 
@@ -59,32 +69,36 @@ class Game:
         print('welcome to the Game {0}, yours level is {1}'.format(self.player.nick_name,self.player.id_category))
         print('answers the questions the correct form,')
         count = 1
+        self.round(self.player.id_category)
         while self.player.id_category != 6:
             print(f"Level {self.player.id_category}  Player {self.player.nick_name} : {self.player.score} points")
             
             if len(self.selected_questions) != 0:
                 self.question = self.select_question()
                 option = int(input(self.show_question(self.question,count)))
-            
+
                 if option == self.question.answer:
                     print("correct answer")
                     self.player.score += 1
                     count += 1
                 else:
                     print("incorrect answer \n Game Over")
+                    self.save_game(self.player)
                     break
             else:
-                self.player.id_category += 1
-                self.round(self.player.id_category)
-
-
+                if self.player.id_category == 5 and count == 25:
+                    print("Game Finished - Congratulations")
+                    self.save_game(self.player)
+                    break
+                else:
+                    self.player.id_category += 1
+                    self.round(self.player.id_category)
 
 if __name__ =='__main__':
     player = Player()
     player.id = 1
     player.nick_name = 'pater'
     game_1 = Game(player)
-    game_1.round(1)
     game_1.play_game()
 
     
