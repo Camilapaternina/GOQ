@@ -58,7 +58,7 @@
         <option_2>JavaScript</option_2>
         <option_3>Java</option_3>
         <option_4>SQL</option_4>
-        <answer>2t</answer>
+        <answer>2</answer>
     </question>
     <question>
         <id>7</id>
@@ -173,7 +173,7 @@
     <question>
         <id>19</id>
         <category>4</category>
-        <description> Cual es el resultado del siguiente programa? int i=1;int j=2; System.out.println ((i > 1)&&(j > 4));</description>
+        <description> Cual es el resultado del siguiente programa? int i=1;int j=2; System.out.println ((i > 1) and (j > 4));</description>
         <option_1>true</option_1>
         <option_2>false</option_2>
         <option_3>undefined</option_3>
@@ -213,7 +213,7 @@
     <question>
         <id>23</id>
         <category>5</category>
-        <description> El resultado de "C", de la siguiente operación: C = 10 % 3;.</description>
+        <description> El resultado de "C", de la siguiente operación: C = 10 % 3;</description>
         <option_1>0</option_1>
         <option_2>15</option_2>
         <option_3>2</option_3>
