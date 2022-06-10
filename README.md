@@ -1,2 +1,2 @@
 # GOQ
-Gama Of Questions
+Game Of Questions
