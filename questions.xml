@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<questions>
+    <question>
+        <id>1</id>
+        <category>1</category>
+        <description>Cual de los siguientes lenguajes de progrmación es Compilado</description>
+        <option_1>Java</option_1>
+        <option_2>JavaScript</option_2>
+        <option_3>Python</option_3>
+        <option_4>Celerion</option_4>
+        <answer>Java</answer>
+    </question>
+     <question>
+        <id>2</id>
+        <category>1</category>
+        <description>Cual de los siguientes lenguajes de progrmación es Compilado</description>
+        <option_1>Java</option_1>
+        <option_2>JavaScript</option_2>
+        <option_3>Python</option_3>
+        <option_4>Celerion</option_4>
+        <answer>Python</answer>
+    </question>
+</questions>
