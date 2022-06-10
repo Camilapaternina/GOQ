@@ -1,6 +1,8 @@
 from random import choice
 from xml.etree.ElementTree import parse
 import xml.etree.ElementTree as et
+
+from sqlalchemy import values
 from Category import Category
 from Question import Question
 from Player import Player
@@ -53,24 +55,18 @@ class Game:
         return question
        
     def save_game(self, player):
-        #try{tree = et.parse('result_games.xml')}
-        #if tree == None:
-            games = et.Element("games")
-            game = et.SubElement(games,"game")
-            nick_name = et.SubElement(game,"nick_name")
-            nick_name.text = player.nick_name
-            score = et.SubElement(game,"score")
-            score.text = str(player.score)
-            tree = et.ElementTree(game)
-            tree.write("result_games.xml", encoding='utf-8', xml_declaration=True)
-        #else:
-            #new_elemet = et.SubElement(tree.getroot(),"game")
-            #nick_name = et.SubElement(new_elemet,"nick_name")
-            #nick_name.text = player.nick_name
-            #score = et.SubElement(new_elemet,"score")
-            #score.text = str(player.score)
-            #tree.find(new_elemet)
-
+        file = 'result_games.xml'
+        xml = et.parse(file)
+        root = xml.getroot()
+        game = et.Element('player')
+        id_player = et.SubElement(game, 'id')
+        id_player.text = str(player.id)
+        nick_name = et.SubElement(game,"nick_name")
+        nick_name.text = player.nick_name
+        score = et.SubElement(game,"score")
+        score.text = str(player.score)
+        root.insert(1, game)
+        xml.write(file, xml_declaration=True, encoding='utf-8')
 
     def play_game(self):
 
