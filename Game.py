@@ -21,18 +21,17 @@ class Game:
         print('welcome to the Game {0}, yours level is {1}'.format(self.player.nick_name,self.player.id_category))
         print('answers the questions the correct form,')
         live = 1
-        while live == 1:
-            question = self.select_question()
-            self.show_question(question)
-            structured_question = 
-            options = input(que)
+        #while live == 1:
+        question = self.select_question()
+                  
+        options = input(self.show_question(question))
 
 
 
 
-        def show_question(question):
-            print("{} /n {} /n {}".format(self.player.nick_name,))
-    
+    def show_question(self, question):
+        msg = str ("{0} \n {1} \n {2} \n {3} \n {4}".format(question.description, question.options[0], question.options[1], question.options[2], question.options[3]))
+        return msg
     
     def load_questions(self):
         xml_questions = parse('questions.xml') 
@@ -92,7 +91,7 @@ if __name__ =='__main__':
     player.id = 1
     player.nick_name = 'pater'
     game_1 = Game(player)
-    print(game_1.select_question())
+    game_1.play_game()
 
     
     
